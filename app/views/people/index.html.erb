@@ -1,0 +1,21 @@
+<h1>Address Book</h1>
+<div>
+    <%= render partial: 'new_person_form' %>
+</div>
+<br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Telephone</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="people">
+        <%= render partial: 'people_collection' %>
+    </tbody>
+</table>    

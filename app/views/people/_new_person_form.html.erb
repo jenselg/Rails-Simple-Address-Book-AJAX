@@ -1,0 +1,9 @@
+<%= form_for @person, remote: true do |f| %>
+    <%= f.text_field :first_name, placeholder: "First Name" %>
+    <%= f.text_field :last_name, placeholder: "Last Name" %>
+    <%= f.text_field :address, placeholder: "Address" %>
+    <%= f.text_field :telephone, placeholder: "Telephone" %>
+    <%= f.text_field :email, placeholder: "Email" %>
+    <%= f.text_field :website, placeholder: "Website" %>
+    <%= f.submit "Create Contact" %>
+    <% end %>

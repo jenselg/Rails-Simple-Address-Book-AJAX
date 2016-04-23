@@ -1,0 +1,11 @@
+<% @people.each do |person| %>
+    <tr>
+      <td><%= person.first_name %></td>
+      <td><%= person.last_name %></td>
+      <td><%= person.address %></td>
+      <td><%= person.telephone %></td>
+      <td><%= person.email %></td>
+      <td><%= person.website %></td>
+      <td><%= link_to 'Delete', person_path(person), method: :delete, remote: true %></td>
+    </tr>  
+<% end %>
